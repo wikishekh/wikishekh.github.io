@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>আলহাজ্ব মাওলানা শেখ মুহাম্মাদ আবু জাফর</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#07532f;
+  --green2:#0b7040;
+  --deep:#053b25;
+  --gold:#d6b64a;
+  --gold2:#f0d778;
+  --cream:#fffceb;
+  --line:#9cae77;
+  --red:#b52f35;
+  --purple:#762b91;
+  --blue:#225c8d;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Noto Serif Bengali",serif;
+  background:
+    radial-gradient(circle at 8px 8px,#6e9950 1.5px,transparent 2px) 0 0/18px 18px,
+    radial-gradient(circle at 2px 2px,#214e31 1px,transparent 1.7px) 0 0/13px 13px,
+    #0b4b2d;
+  color:#172d20;
+}
+.poster{
+  width:min(1100px,100%);
+  margin:18px auto;
+  background:var(--cream);
+  border:5px solid var(--gold);
+  border-radius:38px;
+  overflow:hidden;
+  box-shadow:0 12px 35px #0008,0 0 0 4px #0d6038;
+}
+.top{
+  min-height:118px;
+  padding:15px 28px 13px;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  background:
+    radial-gradient(circle,#ffffff22 1px,transparent 1.8px) 0 0/15px 15px,
+    linear-gradient(135deg,#073d26,#12633b 52%,#063b25);
+  border-bottom:3px solid var(--gold);
+}
+.top .side{
+  position:absolute;
+  top:25px;
+  width:24%;
+  font-weight:700;
+  line-height:1.35;
+  font-size:17px;
+}
+.top .left-note{left:2.5%}
+.top .right-note{right:2.5%}
+.bismillah{
+  display:inline-block;
+  direction:rtl;
+  margin-top:2px;
+  padding:7px 38px 10px;
+  border:3px solid var(--gold2);
+  border-radius:45px;
+  background:#0a4d2f;
+  font-family:serif;
+  font-size:39px;
+  line-height:1;
+  text-shadow:0 2px 2px #000;
+}
+.star{
+  color:var(--gold2);
+  font-size:22px;
+  vertical-align:middle;
+  margin:0 8px;
+}
+.layout{
+  display:grid;
+  grid-template-columns:49.5% 50.5%;
+  min-height:950px;
+}
+.visual{
+  position:relative;
+  background:#eaf0cc;
+  overflow:hidden;
+}
+.visual img{
+  width:100%;
+  height:100%;
+  min-height:950px;
+  display:block;
+  object-fit:cover;
+  object-position:center top;
+}
+.visual:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  box-shadow:inset -18px 0 30px -25px #0008;
+}
+.info{
+  padding:13px 18px 14px 11px;
+  background:
+    radial-gradient(circle,#d5d6a01a 1px,transparent 1.6px) 0 0/12px 12px,
+    #fffde9;
+}
+.card{
+  border:2px solid var(--line);
+  border-radius:17px;
+  overflow:hidden;
+  background:#fffef4;
+  margin-bottom:10px;
+  box-shadow:0 1px 4px #52703320;
+}
+.card-head{
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:5px 11px;
+  color:#fff;
+  font-size:20px;
+  font-weight:800;
+  background:linear-gradient(90deg,#0a6036,#26834c);
+  border-bottom:2px solid var(--gold);
+}
+.badge{
+  width:32px;height:32px;flex:0 0 32px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:#fff;
+  color:#17643d;
+  font-size:17px;
+}
+.card-body{
+  padding:7px 12px 9px;
+  font-size:14px;
+  line-height:1.5;
+}
+.row{
+  display:grid;
+  grid-template-columns:105px 1fr;
+  gap:4px;
+  padding:3px 0;
+  border-bottom:1px dotted #b7c29b;
+}
+.row:last-child{border-bottom:0}
+.label{font-weight:800;color:#07552f}
+ul{margin:0;padding-left:19px}
+li{margin:1px 0}
+.note{font-size:12px;color:#465341}
+.two{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+.mini{
+  border:2px solid;
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+}
+.mini.good{border-color:#70a56c}
+.mini.bad{border-color:#c85a5e}
+.mini h3{
+  margin:0;padding:5px 10px;
+  color:#fff;font-size:17px;
+}
+.good h3{background:#25804a}
+.bad h3{background:#b9373c}
+.mini ul{padding:7px 20px;font-size:12px;line-height:1.5}
+.contact{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:4px;
+}
+.contact-line{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  font-size:13px;
+}
+.footer{
+  text-align:center;
+  color:#fff;
+  padding:14px 20px 17px;
+  border-top:4px solid var(--gold);
+  background:
+    radial-gradient(circle,#ffffff1d 1px,transparent 1.7px) 0 0/16px 16px,
+    linear-gradient(135deg,#063d27,#0d653b,#063b25);
+}
+.footer .name{
+  color:#f5db72;
+  font-size:28px;
+  font-weight:800;
+  line-height:1.35;
+}
+.footer .degree{
+  display:inline-block;
+  margin:5px auto;
+  padding:3px 16px;
+  border-radius:20px;
+  background:#f0d96d;
+  color:#0b4d2e;
+  font-size:13px;
+  font-weight:800;
+}
+.footer .job{
+  display:inline-block;
+  padding:2px 24px;
+  border-radius:20px;
+  background:#286fa4;
+  font-weight:700;
+  font-size:14px;
+}
+.footer .institution{
+  margin-top:5px;
+  font-size:20px;
+  font-weight:700;
+}
+@media(max-width:800px){
+  body{padding:0}
+  .poster{margin:0;border-width:3px;border-radius:0}
+  .top{min-height:100px}
+  .top .side{font-size:11px}
+  .bismillah{font-size:25px;padding:7px 22px}
+  .layout{grid-template-columns:1fr}
+  .visual{height:650px}
+  .visual img{min-height:650px}
+  .info{padding:10px}
+  .card-body{font-size:13px}
+}
+@media(max-width:480px){
+  .top .side{display:none}
+  .bismillah{font-size:24px}
+  .two{grid-template-columns:1fr}
+  .row{grid-template-columns:88px 1fr}
+  .visual{height:560px}
+  .visual img{min-height:560px}
+  .footer .name{font-size:22px}
+  .footer .institution{font-size:16px}
+}
+</style>
+</head>
+
+<body>
+<div class="poster">
+
+  <header class="top">
+    <div class="side left-note">“জ্ঞান, নৈতিকতা<br>ও মানবতাবোধ<br>জীবনের সফলতা”</div>
+    <div class="side right-note">আল্লাহই যথেষ্ট<br>۞</div>
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+  </header>
+
+  <div class="layout">
+
+    <!-- আপনার দেওয়া ছবির বাম অংশ থেকে নেওয়া visual -->
+    <section class="visual">
+      <img src="profile-left.jpg" alt="প্রোফাইল">
+    </section>
+
+    <main class="info">
+
+      <section class="card">
+        <div class="card-head"><span class="badge">👤</span>ব্যক্তিগত তথ্য</div>
+        <div class="card-body">
+          <div class="row"><div class="label">নাম:</div><div>শেখ মুহাম্মাদ আবু জাফর</div></div>
+          <div class="row"><div class="label">এনআইডি নং:</div><div>XXXXXXXXXXXX</div></div>
+          <div class="row"><div class="label">ঠিকানা:</div><div>গ্রাম: মেটের, ইউনিয়ন: গার্কিয়া, উপজেলা: বাকেরগঞ্জ, জেলা: বরিশাল</div></div>
+          <div class="row"><div class="label">মোবাইল নং:</div><div>০১৭XXXXXXXX</div></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><span class="badge">👨‍👩‍👦</span>পারিবারিক তথ্য</div>
+        <div class="card-body">
+          <div class="row"><div class="label">পিতা:</div><div>শেখ মুহাম্মাদ শহীদুল্লাহ (আব্বাস সাহেব)।</div></div>
+          <div class="row"><div class="label">মাতা:</div><div>জোহরা খাতুন রাব্বানী।</div></div>
+          <div class="row"><div class="label">দাদা:</div><div>আলহাজ্ব শেখ আব্দুল কাদের মুন্সী ইবনে আলহাজ্ব শেখ সেলিম উদ্দীন (ছোট হাজী) ইবনে শেখ ইসহাক ইবনে শেখ ইসমাইল।</div></div>
+          <div class="row"><div class="label">দাদি:</div><div>হাজেরা খাতুন বিনতে আজহার শিকদার (আজহার মুন্সী, উত্তর চাপরকাঠী শিকদার বাড়ী)।</div></div>
+          <div class="row"><div class="label">নানা:</div><div>মোঃ জহির উদ্দীন হাওলাদার ইবনে সুন্দর আলী হাওলাদার (ফরমান হাজী বাড়ী, গৌরলকাঠী, পাদাপলিয়া, নলছিটি, ঝালকাঠী)।</div></div>
+          <div class="row"><div class="label">নানি:</div><div>শামসুন্নাহার বিনতে বল্লু জোমাদ্দার (দুর্বারিয়া, জুরাকাঠী, নলছিটি, ঝালকাঠী)।</div></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head" style="background:linear-gradient(90deg,#b7353d,#c94e52)"><span class="badge">▣</span>জন্ম তথ্য</div>
+        <div class="card-body">
+          <div class="row"><div class="label">জন্ম তারিখ:</div><div>০৭ মে ১৯৯৬ খ্রি., ২০ বৈশাখ ১৪০৩ বঙ্গাব্দ, ১৯ সফর ১৪১৭ হিজরী। রোজ: শনিবার, ফজরের আজানের আগে ভোর ৪টায়।</div></div>
+          <div class="row"><div class="label">জন্মস্থান:</div><div>মেটের পৈতৃক বাড়িতে, গার্কিয়া, বাকেরগঞ্জ, বরিশাল।</div></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head" style="background:linear-gradient(90deg,#a97822,#bd8c31)"><span class="badge">☼</span>জন্ম রাশি</div>
+        <div class="card-body">
+          <ul>
+            <li>০১. বৃশ্চিক (চন্দ্র রাশি)</li>
+            <li>০২. মেষ (সূর্য রাশি)</li>
+            <li>০৩. বৃষ Taurus (পশ্চিমা মতে)। আমাদের দেশে চন্দ্র রাশি হিসেবে গণনা করা হয়। তাই বৃষ রাশি।</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head" style="background:linear-gradient(90deg,#6d2887,#8736a2)"><span class="badge">★</span>জন্ম নক্ষত্র</div>
+        <div class="card-body">
+          অনুরাধা। অনুরাধা নক্ষত্রের বৈশিষ্ট্য: এই নক্ষত্রের জাতকরা সাধারণত ভেদী, সাহসী, বন্ধুবৎসল ও সংগঠন-প্রিয় হয়। একবার লক্ষ্য ঠিক করলে সহজে ছাড়ে না।
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head" style="background:linear-gradient(90deg,#285f80,#32799e)"><span class="badge">☼</span>জন্ম লগ্ন ও মুহূর্ত</div>
+        <div class="card-body">
+          <div class="row"><div class="label">জন্ম লগ্ন:</div><div>মেষ</div></div>
+          <div class="row"><div class="label">জন্মমুহূর্ত:</div><div>ব্রাহ্ম মুহূর্ত (শুভ সময়)</div></div>
+          <div class="row"><div class="label">জন্মপক্ষ:</div><div>কৃষ্ণপক্ষ, দ্বিতীয়া তিথি।</div></div>
+        </div>
+      </section>
+
+      <div class="two">
+        <section class="mini good">
+          <h3>✓ শুভ বিষয়</h3>
+          <ul>
+            <li>শুভ বার: মঙ্গলবার, সোমবার ও বৃহস্পতিবার।</li>
+            <li>শুভ রং: লাল, সাদা ও মিশ্র রং (সাদা রং বেশি শুভ)।</li>
+            <li>শুভ সংখ্যা: ৯, ১, ৭</li>
+            <li>শুভ রত্ন: প্রবাল (মঙ্গলের জন্য), মুক্তা (চন্দ্রের জন্য)।</li>
+            <li>শুভ দিক: দক্ষিণ ও উত্তর।</li>
+            <li>মিশ্র রাশি: কন্যা, মীন, কর্কট।</li>
+          </ul>
+        </section>
+
+        <section class="mini bad">
+          <h3>✕ অশুভ বিষয়</h3>
+          <ul>
+            <li>অশুভ বার: শনিবার।</li>
+            <li>অশুভ সময়: শনিবার রাহুকাল ও শনি প্রবেশ প্রভাব।</li>
+            <li>অশুভ রং: কালো ও গাঢ় নীল (এগুলো কম ব্যবহার করা ভালো)।</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="card" style="margin-top:10px">
+        <div class="card-head" style="background:linear-gradient(90deg,#245d8c,#3279ad)"><span class="badge">✉</span>যোগাযোগ</div>
+        <div class="card-body contact">
+          <div class="contact-line">📧 <strong>Email:</strong>&nbsp; sheikhabuzafor@gmail.com</div>
+          <div class="contact-line">📱 <strong>Mobile:</strong>&nbsp; ০১৭XXXXXXXX</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="name">আলহাজ্ব মাওলানা শেখ মুহাম্মাদ আবু জাফর</div>
+    <div class="degree">[রিব. অনার্স এমএ (বাংলা, ইংরেজি) এলএল.বি, এলএল.এম, কামিল (হাদীস, ফিকহ), ডিপ্লোমা]</div><br>
+    <div class="job">সহকারী অধ্যাপক (বাংলা)</div>
+    <div class="institution">হানুয়া লক্ষ্মীপাশা মুহাম্মাদিয়া আলিম মাদ্রাসা</div>
+  </footer>
+
+</div>
+</body>
+</html>
